@@ -49,7 +49,7 @@ public class BurgerTests {
         assertEquals("List must not contain a remote ingredient", 0, burger.ingredients.size());
     }
 
-    //Проверка перемещения ингридиентов
+    //Проверка перемещения слоя ингридиента
     @Test
     public void moveIngredientTest() {
         burger.addIngredient(ingredientMock);
