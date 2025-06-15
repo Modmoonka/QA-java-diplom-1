@@ -27,18 +27,21 @@ public class BurgerTests {
         burger = new Burger();
     }
 
+    //Проверка на булочку в бургере
     @Test
     public void setBunsTest() {
         burger.setBuns(mockBun);
         assertEquals(mockBun, burger.bun);
     }
 
+    //Проверка ингридиента в бургере
     @Test
     public void addIngredientTest() {
         burger.addIngredient(ingredientMock);
         assertTrue("Ingredient add", burger.ingredients.contains(ingredientMock));
     }
 
+    //Проверка на удаление ингридиента
     @Test
     public void removeIngredientTest() {
         burger.addIngredient(ingredientMock);
@@ -46,6 +49,7 @@ public class BurgerTests {
         assertEquals("List must not contain a remote ingredient", 0, burger.ingredients.size());
     }
 
+    //Проверка перемещения ингридиентов
     @Test
     public void moveIngredientTest() {
         burger.addIngredient(ingredientMock);
@@ -54,6 +58,7 @@ public class BurgerTests {
         assertEquals(List.of(newIngredientMock, ingredientMock), burger.ingredients);
     }
 
+    //Проверка расчета цены
     @Test
     public void checkGetPrice() {
         burger.setBuns(mockBun);
@@ -65,9 +70,10 @@ public class BurgerTests {
         when(newIngredientMock.getPrice()).thenReturn(2f);
 
         float expectedPrice = (30f * 2) + 10f + 2f;
-        assertEquals(expectedPrice, burger.getPrice(), 0);
+        assertEquals("Incorrect price", expectedPrice, burger.getPrice(), 0);
     }
 
+    //Проверка печати чека
     @Test
     public void checkGetReceipt() {
         burger.setBuns(mockBun);

@@ -18,11 +18,11 @@ public class BunTests {
     @Parameterized.Parameters
     public static Object[][] getParametersForTests() {
         return new Object[][] {
-               // {"black bun", null},
+               {"black bun", null},
                 {" ", 100},
                 {"",0.1F},
-               // {null},
-                {"!1$<.>/?*()_-+`~", 60},
+                {null},
+                {"!1$<.>/?*()_-+`~", -60F},
                 {"black bun", 500},
                 {"white bun", 200.005F},
         };
