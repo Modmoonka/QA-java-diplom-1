@@ -5,6 +5,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
+import static java.lang.Float.NaN;
+
 @RunWith(Parameterized.class)
 public class Bun_Name_Test {
     private final String bunName;
@@ -22,8 +24,7 @@ public class Bun_Name_Test {
                 {""},
                 {null},
                 {"!1$<.>/?*()_-+`~"},
-                {},
-                {"черная булочка"},
+                {"черная булочка"}
         };
     }
 

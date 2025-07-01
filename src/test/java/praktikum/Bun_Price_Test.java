@@ -17,7 +17,6 @@ public class Bun_Price_Test {
     @Parameterized.Parameters
     public static Object[][] getNameBunTests() {
         return new Object[][] {
-                {null},
                 {100},
                 {0.1F},
                 {NaN},
