@@ -27,7 +27,7 @@ public class BurgerTests {
         burger = new Burger();
     }
 
-    //Проверка на булочку в бургере
+    //Проверка булочку в бургере
     @Test
     public void setBunsTest() {
         burger.setBuns(mockBun);
