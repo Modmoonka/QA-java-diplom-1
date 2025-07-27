@@ -5,13 +5,12 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import static java.lang.Float.NaN;
 
 @RunWith(Parameterized.class)
-public class Bun_Name_Test {
+public class BunNameTest {
     private final String bunName;
 
-    public Bun_Name_Test(String bunName) {
+    public BunNameTest(String bunName) {
         this.bunName = bunName;
     }
 

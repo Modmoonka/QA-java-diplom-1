@@ -7,10 +7,10 @@ import org.junit.runners.Parameterized;
 import static java.lang.Float.*;
 
 @RunWith(Parameterized.class)
-public class Bun_Price_Test {
+public class BunPriceTest {
     private final float bunPrice;
 
-    public Bun_Price_Test(float bunPrice) {
+    public BunPriceTest(float bunPrice) {
         this.bunPrice = bunPrice;
     }
 
